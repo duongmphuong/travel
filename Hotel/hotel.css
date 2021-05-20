@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* -----------Navbar----------- */
+
+.bg {
+    background: rgb(255, 251, 19);
+}
+
+.main-navbar-light {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 10px;
+}
+
+.nav-link {
+    color: rgb(255, 14, 14) !important;
+    padding: 10px 20px !important;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+#my-nav .navbar-nav .nav-item a:hover {
+    background: #00d8ff;
+    width: 100%;
+}
+
+
+/* -----------End navbar------------- */
+
+
+/* -----------Background------------- */
+
+.hero-wrap {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 0;
+}
+
+.hero-wrap .main-text {
+    height: 700px !important;
+}
+
+.main-text h1 {
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.main-text p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+/* ----------End Background----------- */
+
+
+/* ----------Booking hotel----------- */
+
+#form {
+    background-color: #000;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    opacity: 0.7;
+    position: relative;
+    bottom: 150px;
+}
+
+#first-group {
+    border: none;
+    width: 400px;
+    margin-top: 38px;
+    position: absolute;
+}
+
+#content {
+    border: 1px solid #fff;
+    margin: 10px;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+#content #input-group {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 8px;
+    width: 300px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.fa {
+    display: inline-block;
+    color: red;
+    border-right: 1px solid #fff;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+#second-group {
+    border: none;
+    width: 400px;
+    margin-top: 55px;
+    margin-left: 400px;
+}
+
+#submit-btn {
+    margin-top: 30px;
+    margin-left: 600px;
+    background: transparent;
+    color: #fff;
+    width: 150px;
+    border: 1px solid red;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(hotel_image/hotelbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* ---------End form Booking Hotel---- */
+
+
+/* services */
+
+.tm-service {
+    max-width: 30%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;
+}
+
+.tm-servicesection {
+    display: flex;
+}
+
+.tm-serimage {
+    display: inline-block;
+    max-width: 20%;
+    width: 10%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.tm-service div {
+    display: inline-block;
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p {
+    font-size: 1.5vmax;
+}
+
+.tm-service .b {
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+
+/* -----Hotel-------- */
+
+
+/*-------------------------------------
+        8. Packages 
+--------------------------------------*/
+
+.packages {
+    padding: 120px 0 90px;
+}
+
+.packages-content {
+    margin-top: 65px;
+}
+
+
+/*single-package-item */
+
+.single-package-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.single-package-item-txt {
+    padding: 0 25px;
+}
+
+.single-package-item img {
+    width: 100%;
+}
+
+.single-package-item h3 {
+    position: relative;
+    font-size: 20px;
+    color: #565a5c;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+}
+
+.single-package-item h3:after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+}
+
+.packages-para {
+    padding: 17px 0 0;
+    text-transform: capitalize;
+}
+
+.packages-para p {
+    font-size: 14px;
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.packages-para p span {
+    display: inline-block;
+    width: 150px;
+}
+
+.packages-review p i {
+    color: #ffdf00;
+    font-size: 16px;
+}
+
+.packages-review span {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.about-view.packages-btn {
+    width: 110px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.about-view.packages-btn:hover {
+    box-shadow: 0 5px 20px rgba(14, 15, 18, .3);
+}
+
+.single-package-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+
+/* --------Hot hotel---------- */
+
+.room {
+    margin: 40px 0;
+}
+
+.room {
+    margin: 45px 0;
+    padding-bottom: 25px;
+    color: rgb(32, 30, 30);
+}
+
+.room {
+    height: 300px;
+}
+
+.room-text {
+    padding: 5px 20px;
+    height: 300px;
+}
+
+.room-text h3 {
+    font-size: 24px;
+}
+
+.room-text ul {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.room-text ul li {
+    padding: 7px 0;
+}
+
+.room-text ul li i {
+    color: yellow;
+    margin-right: 10px;
+}
+
+.room-text span {
+    font-size: 40px;
+    font-weight: 900;
+    color: yellow;
+}
+
+.room-image {
+    overflow: hidden;
+}
+
+.room-image img {
+    transition: transition;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .4s ease-in-out;
+}
+
+.room-image:hover img {
+    transform: scale(1.1);
+}
+
+.room .room-text .button .btn {
+    background-color: crimson;
+    width: 100px;
+    height: 40px;
+    color: rgb(37, 34, 34);
+    border-radius: 30px;
+    outline: none;
+}
+
+.room .room-text .button .btn:hover {
+    background-color: burlywood;
+}
+
+@media (min-width: 900px) {
+    .rooms-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media(min-width: 1370px) {
+    .rooms-container {
+        flex-direction: column;
+    }
+    .room {
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .room-image {
+        flex: 1;
+    }
+    .room-image img {
+        height: 100%;
+    }
+    .room-text {
+        flex: 1;
+    }
+    .room:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* -------End hot hotel-------- */
+
+
+/* ----------footer -----------------*/
+
+.footer-copyright {
+    background: #f9f9f9;
+    padding: 0;
+}
+
+.footer-content {
+    padding: 70px;
+}
+
+.single-footer-item {
+    text-transform: capitalize;
+}
+
+.single-footer-item h2 {
+    color: #565a5c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+/*footer-logo*/
+
+.footer-logo {
+    padding-top: 80px;
+}
+
+.footer-logo a>span {
+    color: #00d8ff;
+    text-transform: capitalize;
+}
+
+.footer-logo p {
+    color: #aaa;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+
+/*footer-logo*/
+
+
+/*single-footer-txt*/
+
+.single-footer-txt p {
+    margin-bottom: 8px;
+}
+
+.single-footer-txt p a {
+    color: #565a5c;
+    font-size: 16px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+/*single-footer-txt*/
+
+.footer-copyright hr {
+    border-top: 1px solid #ebebeb;
+}
+
+
+/*foot-icons*/
+
+.foot-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.foot-icons .footer-social-links li {
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.foot-icons .footer-social-links a {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    width: 60px;
+    margin: 10px;
+    line-height: 60px;
+    height: 60px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 50%;
+}
+
+.foot-icon-bg-1 {
+    background: #3b5999;
+}
+
+.foot-icon-bg-2 {
+    background: #1da1f3;
+}
+
+.foot-icon-bg-3 {
+    background: #8938ae;
+    background: -webkit-linear-gradient(right, #8938ae 0%, #c13181 100%);
+    background: -o-linear-gradient(right, #8938ae 0%, #c13181 100%);
+    background: linear-gradient(to right, #8938ae 0%, #c13181 100%);
+}
+
+.foot-icons .footer-social-links a:hover {
+    color: #00d8d5;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.foot-icons p {
+    color: #aaa;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+.foot-icons p a,
+.foot-icons p a:hover,
+.foot-icons p a:focus {
+    color: #10cbec;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+
+/*foot-icons*/
+
+
+/* ----------End footer------------- */
+
+
+/*===============================
+         Scroll Top
+===============================*/
+
+#scroll-Top .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 15;
+    color: #fff;
+    background: #00d8ff;
+    border: 1px solid #00d8ff;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 2;
+}
+
+#scroll-Top .return-to-top:hover {
+    background: #2cdbb5;
+    color: #fff;
+    border-radius: 50%;
+}

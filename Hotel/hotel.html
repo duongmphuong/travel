@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn</title>
+    <link rel="stylesheet" href="hotel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar bg m-navbar-light" id="main-navbar">
+        <div class="container">
+            <a href="index.html" style="
+            text-decoration: none;
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+              sans-serif;">
+                <h3>VIETNAM</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav" aria-controls="p-nav" aria-expanded="false" aria-label="toggle-navigation" style="border-radius: 10px;outline: none; background-color: aquamarine;">
+          <span style="color: rgb(241, 134, 46);">Menu <i class = "fas fa-bars"></i></span>
+        </button>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../Home/index.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Du lịch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Văn hóa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ẩm thực</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="../Hotel/hotel.html" class="nav-link">Lưu trú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- background -->
+    <section class="hero-wrap" style="background-image: url('hotel_image/hotelbg.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters main-text align-items-center">
+                <div class="col-lg-7 col-md-6 d-flex align-items-end">
+                    <div class="text">
+                        <h1 class="mb-4 text-capitalize">
+                            find a perfect deal<br /> for you next trip
+                        </h1>
+                        <p style="font-size: 18px">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Volupatate perspiciatis ducimus aliqiam architecto possimus. Voluptatum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end background -->
+
+    <!---Search section-->
+    <section>
+        <div class="section-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 tab-search">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link p-3 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Giá ưu đãi</a>
+                            <a class="nav-link p-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Khách sạn</a>
+                            <a class="nav-link p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Căn hộ</a>
+                        </div>
+                    </div>
+                    <div class="tab-content py-5" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <section id="pack" class="packages">
+                                <div class="container">
+                                    <div class="gallary-header text-center">
+                                        <h2>
+                                            Khách sạn hàng đầu
+                                        </h2>
+                                        <p>
+                                            Đặt khách sạn ở chúng tôi - Khẳng định giấc ngủ của bạn.
+                                        </p>
+                                    </div>
+                                    <!--/.gallery-header-->
+                                    <div class="packages-content">
+                                        <div class="row">
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>italy <span class="pull-right">$499</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                            book now
+                                                        </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>england <span class="pull-right">$1499</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>france <span class="pull-right">$1199</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>india <span class="pull-right">$799</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>spain <span class="pull-right">$999</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>thailand <span class="pull-right">$799</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <section id="pack" class="packages">
+                                <div class="container">
+                                    <div class="gallary-header text-center">
+                                        <h2>
+                                            Khách sạn hàng đầu
+                                        </h2>
+                                        <p>
+                                            Đặt khách sạn ở chúng tôi - Khẳng định giấc ngủ của bạn.
+                                        </p>
+                                    </div>
+                                    <!--/.gallery-header-->
+                                    <div class="packages-content">
+                                        <div class="row">
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>italy <span class="pull-right">$499</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                            book now
+                                                        </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>england <span class="pull-right">$1499</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>france <span class="pull-right">$1199</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>india <span class="pull-right">$799</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>spain <span class="pull-right">$999</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                            <div class="col-md-4 col-sm-6">
+                                                <div class="single-package-item">
+                                                    <img src="../Hotel/hotel_image/hotelbg.jpg">
+                                                    <div class="single-package-item-txt">
+                                                        <h3>thailand <span class="pull-right">$799</span></h3>
+                                                        <div class="packages-para">
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> 5 star accomodation
+                                                            </p>
+                                                            <p>
+                                                                <span>
+                                                                <i class="fa fa-angle-right"></i>  transportation
+                                                            </span>
+                                                                <i class="fa fa-angle-right"></i> food facilities
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-para-->
+                                                        <div class="packages-review">
+                                                            <p>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>2544 review</span>
+                                                            </p>
+                                                        </div>
+                                                        <!--/.packages-review-->
+                                                        <div class="about-btn">
+                                                            <button class="about-view packages-btn" onclick="openNav()">
+                                                                book now
+                                                            </button>
+                                                        </div>
+                                                        <!--/.about-btn-->
+                                                    </div>
+                                                    <!--/.single-package-item-txt-->
+                                                </div>
+                                                <!--/.single-package-item-->
+
+                                            </div>
+                                            <!--/.col-->
+
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="block-17">
+                                <form action="" method="post" class="d-block d-lg-flex">
+                                    <div class="fields d-block d-lg-flex">
+                                        <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Location"></div>
+
+                                        <div class="check-in one-third"><input type="text" id="start_date" class="form-control" placeholder="Start date"></div>
+
+                                        <div class="check-out one-third"><input type="text" id="return_date" class="form-control" placeholder="Return date"></div>
+                                        <div class="select-wrap one-third">
+                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                            <select name="" id="" class="form-control">
+                        <option value="">Guest</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3+</option>
+                        
+                      </select>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="search-submit btn btn-primary" value="Find Car">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="block-17">
+                                <form action="" method="post" class="d-block d-lg-flex">
+                                    <div class="fields d-block d-lg-flex">
+                                        <div class="textfield-search one-third one-third-1"><input type="text" class="form-control" placeholder="Search Location"></div>
+
+
+                                        <div class="check-out one-third one-third-1"><input type="text" id="start_date" class="form-control" placeholder="Check-out date"></div>
+
+                                        <div class="select-wrap one-third one-third-1">
+                                            <div class="icon"></div>
+                                            <select name="" id="" class="form-control">
+                        <option value="">Categories</option>
+                        <option value="">Suite</option>
+                        <option value="">Super Deluxe</option>
+                        <option value="">Economy</option>
+                        
+                      </select>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="search-submit btn btn-primary" value="Find Cruise">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!---End of Search section-->
+
+    <!--Form Booking Hotel-->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="container">
+                <form class="form-group">
+                    <div id="form">
+                        <h1 class="text-white text-center">Booking Now</h1>
+
+                        <div id="first-group">
+
+                            <div id="content">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="First name">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <input type="number" id="input-group" placeholder="Phone number">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Departure Date">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <select id="input-group" style="background-color: black;">
+                                    <option value="">No.of guests</option>
+                                    <option value="">1-5</option>
+                                    <option value="">6-10</option>
+                                    <option value="">11-20</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div id="second-group">
+
+                            <div id="content">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Last name">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input type="email" id="input-group" placeholder="Email">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Arrival Date">
+                            </div>
+
+                            <div id="content">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <select id="input-group" style="background-color: black;">
+                                    <option value="">Room Type</option>
+                                    <option value="">AC</option>
+                                    <option value="">Non-AC</option>
+                                    <option value="">Single Bed</option>
+                                    <option value="">Double Bed</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Form Booking-->
+    <!-- Hotel -->
+    <section id="pack" class="packages">
+        <div class="container">
+            <div class="gallary-header text-center">
+                <h2>
+                    Khách sạn hàng đầu
+                </h2>
+                <p>
+                    Đặt khách sạn ở chúng tôi - Khẳng định giấc ngủ của bạn.
+                </p>
+            </div>
+            <!--/.gallery-header-->
+            <div class="packages-content">
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>italy <span class="pull-right">$499</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <!--/.packages-para-->
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <!--/.packages-review-->
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                    book now
+                                </button>
+                                </div>
+                                <!--/.about-btn-->
+                            </div>
+                            <!--/.single-package-item-txt-->
+                        </div>
+                        <!--/.single-package-item-->
+
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>england <span class="pull-right">$1499</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <!--/.packages-para-->
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                        book now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>france <span class="pull-right">$1199</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <!--/.packages-para-->
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <!--/.packages-review-->
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                        book now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>india <span class="pull-right">$799</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                        book now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>spain <span class="pull-right">$999</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <!--/.packages-review-->
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                        book now
+                                    </button>
+                                </div>
+                                <!--/.about-btn-->
+                            </div>
+                            <!--/.single-package-item-txt-->
+                        </div>
+                        <!--/.single-package-item-->
+
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-package-item">
+                            <img src="../Hotel/hotel_image/hotelbg.jpg">
+                            <div class="single-package-item-txt">
+                                <h3>thailand <span class="pull-right">$799</span></h3>
+                                <div class="packages-para">
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> 5 star accomodation
+                                    </p>
+                                    <p>
+                                        <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                        <i class="fa fa-angle-right"></i> food facilities
+                                    </p>
+                                </div>
+                                <!--/.packages-para-->
+                                <div class="packages-review">
+                                    <p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>2544 review</span>
+                                    </p>
+                                </div>
+                                <!--/.packages-review-->
+                                <div class="about-btn">
+                                    <button class="about-view packages-btn" onclick="openNav()">
+                                        book now
+                                    </button>
+                                </div>
+                                <!--/.about-btn-->
+                            </div>
+                            <!--/.single-package-item-txt-->
+                        </div>
+                        <!--/.single-package-item-->
+
+                    </div>
+                    <!--/.col-->
+
+                </div>
+                <!--/.row-->
+            </div>
+        </div>
+    </section>
+
+    <!-- End Hotel -->
+
+
+    <!--Content Item -->
+    <div class="container">
+        <section class="tm-servicesection">
+            <div class="tm-service">
+                <img class="tm-serimage" src="hotel_image/bell.png">
+                <div>
+                    <p class="b">Room Service</p>
+                    <p> Enjoy your stay with excellent and timely room service </p>
+                </div>
+            </div>
+            <div class="tm-service">
+                <img class="tm-serimage" src="hotel_image/coffee.png">
+                <div>
+                    <p class="b">Free Breakfast</p>
+                    <p> Enjoy Free breakfast every morning</p>
+                </div>
+            </div>
+        </section>
+        <section class="tm-servicesection">
+
+            <div class="tm-service">
+                <img class="tm-serimage" src="hotel_image/car-front.png">
+                <div>
+                    <p class="b">Free Parking</p>
+                    <p> No need to pay any extra charges to park your vehicle </p>
+                </div>
+            </div>
+            <div class="tm-service">
+                <img class="tm-serimage" src="hotel_image/spa.png">
+                <div>
+                    <p class="b">Free Spa</p>
+                    <p> Relax at the inhouse Spa once every day of your stay </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Hot hotel -->
+    <!-- 
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>Phòng giá tốt</h2>
+        </div>
+        <div class="container">
+            <div class="room">
+                <div class="room-image">
+                    <img src="hotel_image/hotelbg.jpg">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <span><span>$99.00 / </span>Per Night</span>
+                    <div class="button">
+                        <button type="button" class="btn">book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <div class="room-image">
+                    <img src="hotel_image/hotelbg.jpg">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <span>$99.00 / </span>Per Night
+                    <div class="button">
+                        <button type="button" class="btn">book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <div class="room-image">
+                    <img src="hotel_image/hotelbg.jpg">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i> Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <span>$99.00 /</span> Per Night
+                    <div class="button">
+                        <button type="button" class="btn">book now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- End Hot hotel -->
+
+
+    <!-- footer -->
+    <div class="footer-copyright" style="background-color: rgba(224, 12, 12, 0.055);">
+        <div class="container-fluit">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="single-footer-item">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                        PNT <br><span>VIETNAM Travel</span></a>
+                                <p>
+                                    best travel agency
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="single-footer-item">
+                            <h2>link</h2>
+                            <div class="single-footer-txt">
+                                <p><a href="#">home</a></p>
+                                <p><a href="#">destination</a></p>
+                                <p><a href="#">spacial packages</a></p>
+                                <p><a href="#">special offers</a></p>
+                                <p><a href="#">blog</a></p>
+                                <p><a href="#">contacts</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="single-footer-item text-center">
+                            <h2 class="text-left">contacts</h2>
+                            <div class="single-footer-txt text-left">
+                                <a href="#">
+                                    <p><i class="fas fa-phone"></i> +84 812 701 335</p>
+                                </a>
+                                <a href="#">
+                                    <p><i class="fas fa-envelope-open"></i> dmphuong.20it12@vku.udn.vn</p>
+                                </a>
+                                <p><i class="fas fa-map-marker-alt"></i> Trường đại học Công Nghệ Thông Tin và Truyền Thông Việt Hàn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="foot-icons ">
+                <ul class="footer-social-links list-inline list-unstyled">
+                    <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <!-- <div id="scroll-Top">
+                            <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+                        </div> -->
+            <!--/.scroll-Top-->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="hotel.js"></script>
+
+</body>
+
+</html>
