@@ -459,6 +459,31 @@ body {
 /* -------End hot hotel-------- */
 
 
+/* --------back to top-------- */
+
+.btn-top {
+    display: block;
+    background-color: rgb(49, 202, 202);
+    color: #f0f0f0;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-top:hover {
+    background-color: rgb(144, 240, 240);
+    color: rgb(70, 68, 68);
+}
+
+
+/* -------end back to top----------------*/
+
+
 /* ----------footer -----------------*/
 
 .footer-copyright {
@@ -600,38 +625,3 @@ body {
 
 
 /* ----------End footer------------- */
-
-
-/*===============================
-         Scroll Top
-===============================*/
-
-#scroll-Top .return-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    display: none;
-    width: 40px;
-    line-height: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 15;
-    color: #fff;
-    background: #00d8ff;
-    border: 1px solid #00d8ff;
-    border-radius: 5px;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    z-index: 2;
-}
-
-#scroll-Top .return-to-top:hover {
-    background: #2cdbb5;
-    color: #fff;
-    border-radius: 50%;
-}

@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* -----------Navbar----------- */
+
+.bg {
+    background: rgb(255, 251, 19);
+}
+
+.main-navbar-light {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 10px;
+}
+
+.nav-link {
+    color: rgb(255, 14, 14) !important;
+    padding: 10px 20px !important;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+#my-nav .navbar-nav .nav-item a:hover {
+    background: #00d8ff;
+    width: 100%;
+}
+
+
+/* -----------End navbar------------- */
+
+
+/* background */
+
+.background {
+    background-image: url(../Home/img_home/bg.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background p {
+    font-size: 70px;
+    font-family: cursive;
+    position: relative;
+    top: 270px;
+    color: rgb(178, 231, 55);
+}
+
+@media (max-width: 768px) {
+    .background p {
+        font-size: 30px;
+    }
+}
+
+
+/* end background */
+
+
+/* --------Item title-------------- */
+
+.services {
+    padding: 50px 40px;
+    height: 430px;
+    width: 100%;
+}
+
+.services .icon {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    width: 120px;
+    height: 120px;
+    display: table;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.services .icon i {
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+    font-size: 60px;
+    color: #00BBF0;
+}
+
+
+/*----------End Item title--------  */
+
+
+/* CONTACT US */
+
+
+/*--------------------*/
+
+#contact {
+    background-color: #fff;
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.contact-content {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 100px 18%;
+    width: 100%;
+}
+
+.contact {
+    display: inline;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contact-form-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form .form-group input {
+    background: transparent;
+    border-radius: 0;
+    color: #333;
+    font-size: 15px;
+    border: 1px #888;
+    border-style: none none solid none;
+    height: 45px;
+    margin-bottom: 24px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.contact-form .form-group textarea {
+    background: transparent;
+    border: 1px #888;
+    border-style: none none solid none;
+    border-radius: 0;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    height: 100px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.contact-form .form-control:focus {
+    background-color: #fff;
+    border-style: none none solid none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+    color: #888;
+    font-size: 15px;
+}
+
+.contact-form .form-control:-moz-placeholder {
+    color: #888;
+    font-size: 15px;
+}
+
+.contact-form .form-control::-moz-placeholder {
+    color: #888;
+    font-size: 15px;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+    color: #888;
+    font-size: 15px;
+}
+
+.contact-form .button-default::after,
+.contact-form .button-default>span {
+    padding: 12px 40px;
+}
+
+#form-messages {
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.button {
+    margin: auto;
+    display: block;
+}
+
+.button button {
+    padding: 5px 5px 5px 5px;
+    background-color: cadetblue;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+/*  background  */
+
+
+/* --------back to top-------- */
+
+.btn-top {
+    display: block;
+    background-color: rgb(49, 202, 202);
+    color: #f0f0f0;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-top:hover {
+    background-color: rgb(224, 240, 240);
+    color: rgb(70, 68, 68);
+}
+
+
+/* -------end back to top----------------*/
+
+
+/* ----------footer -----------------*/
+
+.footer {
+    background-color: #33383c;
+    padding: 30px 0px;
+}
+
+.search-text {
+    background-color: #272d33;
+    padding-bottom: 60px;
+}
+
+.search-text .form {
+    position: relative;
+    top: 20px;
+    left: 35%;
+}
+
+.search-text .input-search {
+    height: 45px;
+    width: 75%;
+    color: #333;
+}
+
+.search-text .btn-search {
+    background: #da3e44;
+    border: none;
+    color: rgb(92, 76, 76);
+    height: 45px;
+    width: 80px;
+}
+
+.search-text h4 {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.logo {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.contact span,
+.follow span {
+    color: #FFF;
+    font-weight: bold;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 10px 0px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.contact li a,
+.follow li a {
+    color: #FFF;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact li,
+.follow li {
+    margin: 20px 0px;
+    list-style: none;
+}
+
+.contact li a:hover,
+.follow li a:hover {
+    color: #da3e44;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.contact .fa,
+.follow.fab {
+    color: #da3e44;
+    margin-right: 1px;
+    font-size: 23px;
+}
