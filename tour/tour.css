@@ -310,88 +310,195 @@ body {
 /* -------end back to top----------------*/
 
 
-/* ----------footer -----------------*/
+/*=================footer css start==============*/
 
-.footer {
-    background-color: #33383c;
-    padding: 30px 0px;
+.webintern-footer {
+    background: #0d2034;
 }
 
-.search-text {
-    background-color: #272d33;
-    padding-top: 600px;
-    padding-bottom: 60px;
+.webintern-footer-inner {
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
-.search-text .form {
-    position: relative;
-    top: 20px;
-    left: 35%;
+.webintern-footer-logo {
+    display: inline-block;
 }
 
-.search-text .input-search {
-    height: 45px;
-    width: 75%;
-    color: #333;
+.webintern-footer .webintern-footer-inner .simple-text p {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.search-text .btn-search {
-    background: #da3e44;
-    border: none;
-    color: rgb(92, 76, 76);
-    height: 45px;
-    width: 80px;
+.simple-text p {
+    font-size: 15px;
+    color: #42435d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 0;
 }
 
-.search-text h4 {
-    color: #FFF;
+.webintern-footer .webintern-footer-inner .simple-text a {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    color: #f2c21a;
+    font-size: 15px;
 }
 
-.logo {
-    color: #FFF;
-    font-weight: 800;
-    font-size: 30px;
+.footer-2 {
+    padding-left: 55px;
 }
 
-.contact span,
-.follow span {
-    color: #FFF;
-    font-weight: bold;
-    border-bottom: 1px solid #c7c7c7;
-    padding: 10px 0px;
-    display: block;
+.webintern_footer_title {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.webintern_footer_title small {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
     text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 3px;
 }
 
-.contact li a,
-.follow li a {
-    color: #FFF;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: 14px;
+.webintern_footer_title:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #f2c21a;
+    margin-top: 15px;
 }
 
-.contact li,
-.follow li {
-    margin: 20px 0px;
+.webintern-footer-list {
+    padding: 0;
+}
+
+.webintern-footer-list li {
+    margin-bottom: 17px;
     list-style: none;
 }
 
-.contact li a:hover,
-.follow li a:hover {
-    color: #da3e44;
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
+.webintern-footer-list a {
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 0;
+    letter-spacing: 0.20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.contact .fa,
-.follow.fab {
-    color: #da3e44;
-    margin-right: 1px;
-    font-size: 23px;
+.footer-3 {
+    padding-left: 65px;
+}
+
+.webintern-footer-inner .simple-text.last {
+    color: #d5d5d5;
+    font-size: 17px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.tt-subscribe {
+    position: relative;
+}
+
+.tt-subscribe input:not([type="submit"]) {
+    width: 100%;
+    height: 46px;
+    background: #fff;
+    font-size: 15px;
+    color: #838486;
+    padding-left: 20px;
+    padding-right: 70px;
+    border: 2px solid #fff;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.tt-subscribe-submit {
+    background: #001b57;
+}
+
+.tt-subscribe-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+    color: #2a2a2a;
+    text-align: center;
+    background: #001b57;
+    -moz-border-radius-topright: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tt-subscribe-submit i.fa-envelope:before {
+    content: "\f0e0";
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.tt-subscribe-submit input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #51658d;
+    border: 0;
+}
+
+ul.tt-socail {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.tt-socail li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tt-socail a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.webintern_footer_title small {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.tt-copy {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    background: #51658d;
+    padding: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tt-copy-right {
+    text-align: right;
 }
