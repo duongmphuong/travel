@@ -257,7 +257,7 @@
         
         @media screen and (max-width: 480px) {
             .tour-wrap .tour-entry {
-                width: 100%;
+                width: 50%;
             }
         }
         
