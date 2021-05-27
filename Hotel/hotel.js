@@ -17,3 +17,13 @@ jQuery(document).ready(function($) {
     }
 });
 // end th scroll top
+
+//form booking
+
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}

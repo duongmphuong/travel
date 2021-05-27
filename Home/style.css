@@ -32,8 +32,12 @@
         }
         
         #my-nav .navbar-nav .nav-item a:hover {
-            background: #00d8ff;
+            background: #11dceb;
             width: 100%;
+        }
+        
+        .active .nav-link {
+            color: rgb(202, 144, 144) !important;
         }
         /* -----------End navbar------------- */
         /* -----------Background------------- */

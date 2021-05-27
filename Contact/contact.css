@@ -196,7 +196,7 @@ body {
 }
 
 .contact-form .button-default::after,
-.contact-form .button-default>span {
+.contact-form .button-default {
     padding: 12px 40px;
 }
 

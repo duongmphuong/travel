@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -288,7 +290,7 @@
 
 
     <!--Content -->
-    <div class="about-section mt-5">
+    <div class="about-section mt-5 wow bounceInUp">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center heading-section mb-5">
@@ -365,7 +367,7 @@
 
     <!---Hotel-->
     <section>
-        <div class="popular section-bg img-effect mt-5">
+        <div class="popular section-bg img-effect mt-5 wow bounceInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -540,7 +542,7 @@
     <!-- end scroll top -->
 
 
-    <div class="map-vr text-center" style="height: auto;">
+    <div class="map-vr text-center wow bounceInUp" style="height: auto;">
         <div class="container ">
             <h3><b>Khám phá tại nhà dành cho bạn</b><br>
                 <!-- I <i class="fas fa-heartbeat"></i> VIỆT NAM -->
@@ -548,7 +550,7 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <h5><b>Vịnh Hạ Long</b></h5>
                     <div id="conttenimg1">
                         <iframe src="https://www.google.com/maps/embed?pb=!4v1622015281460!6m8!1m7!1sCAoSLEFGMVFpcFBFWU13TnEtRWdzbGZGQklWV2pMSWpEMnluaWdHVGtZQ1IycWpk!2m2!1d20.8857664!2d107.2045691!3f11.61712103666126!4f19.83798798954804!5f0.7820865974627469" width="100%" height="380px"
@@ -605,8 +607,6 @@
                             <li><a href="#">Đặt tour</a></li>
                             <li><a href="#"> Đặt phòng </a></li>
                             <li><a href="#"> Liên hệ </a></li>
-                            <li><a href="#"> Portfolio </a></li>
-                            <li><a href="#">Contact Us</a></li>
                         </ul>
                         <div class="empty-space xs-25 sm-25"></div>
                     </div>
@@ -621,7 +621,6 @@
                         </div>
 
                         <div class="empty-space marg-lg-b15"></div>
-                        <!-- TT-SUBSCRIBE -->
                         <form method="post">
                             <div class="tt-subscribe">
                                 <input type="text" required="" placeholder="Nhập email của bạn">
@@ -632,7 +631,6 @@
                             </div>
                         </form>
                         <div class="empty-space marg-lg-b30"></div>
-                        <!-- TT-SOCAIL -->
                         <ul class="tt-socail">
                             <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
@@ -653,11 +651,14 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="container-fluid" style="width: 100%;height: 400px; background-color: red;">đây là footer</div> -->
+    <script>
+        new WOW().init();
+    </script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="Home/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
